@@ -13,8 +13,8 @@ class Journal < Formula
   def install
     bin.install "journal"
 
-    bash_completion.install "completions/journal.bash" => "kubectx"
-    zsh_completion.install "completions/journal.zsh" => "_kubectx"
+    bash_completion.install "completions/journal.bash" => "journal"
+    zsh_completion.install "completions/journal.zsh" => "_journal"
     fish_completion.install "completions/journal.fish"
 
     system "make", "man"
