@@ -18,7 +18,7 @@ class Journal < Formula
     fish_completion.install "completions/journal.fish"
 
     system "make", "man"
-    man.install "man/journal.1"
+    man.install "man/journal.1.gz"
   end
 
   test do
