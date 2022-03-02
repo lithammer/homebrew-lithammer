@@ -5,8 +5,6 @@ class Journal < Formula
   sha256 "5e0db97c4d5d543299be14b03d08878ebc2748a23d984c9265408129f08ef8db"
   head "https://github.com/lithammer/journal.git"
 
-  bottle :unneeded
-
   depends_on "bash"
   depends_on "bash-completion@2" => :optional
 
