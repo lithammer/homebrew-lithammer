@@ -1,14 +1,14 @@
 class Journal < Formula
   desc "Simple journal tool for the command-line"
   homepage "https://github.com/lithammer/journal"
-  url "https://github.com/lithammer/journal/archive/v0.0.1.tar.gz"
-  sha256 "e6a551f48864b26f322532bd404410f14d2275d396492c446ebd84f475e5697d"
+  url "https://github.com/lithammer/journal/archive/v0.0.2.tar.gz"
+  sha256 "5e0db97c4d5d543299be14b03d08878ebc2748a23d984c9265408129f08ef8db"
   head "https://github.com/lithammer/journal.git"
 
   bottle :unneeded
 
   depends_on "bash"
-  depends_on "bash-completion@2"
+  depends_on "bash-completion@2" => :optional
 
   def install
     bin.install "journal"
